@@ -1,0 +1,22 @@
+services:
+  # Aplicación Next.js
+  webmusic-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: webmusic-frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      # Montar código fuente para desarrollo
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+    env_file:
+      - .env.local
+
+volumes:
+  node_modules:

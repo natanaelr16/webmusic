@@ -1,0 +1,37 @@
+{
+  "name": "WebMusic Concert - Validación de Boletas",
+  "short_name": "WebMusic",
+  "description": "App para validación de boletas de concierto",
+  "start_url": "/validar",
+  "display": "standalone",
+  "background_color": "#1e293b",
+  "theme_color": "#667eea",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["entertainment", "music"],
+  "shortcuts": [
+    {
+      "name": "Validar Boleta",
+      "short_name": "Validar",
+      "description": "Validar boleta con código QR",
+      "url": "/validar",
+      "icons": [
+        {
+          "src": "/icon-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
